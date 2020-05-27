@@ -5,8 +5,8 @@
       {
           public function ValidarBruker($User, $Pass)
           {
-                $Us = new Conexión();
-                $querey ="SELECT * FROM `usuario` WHERE `Usuario`='$User' AND `Password`= '$Pass';";
+                $Us = new Conexion();
+                $querey ="SELECT * FROM `usuarios` WHERE 1`Usuario`='$User' AND `Password`='$Pass';
                 $Bruker=$Us->query($querey);
                 $Us->close();
                 return $Bruker;

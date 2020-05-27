@@ -8,11 +8,12 @@
 
             $key = $Validere->ValidarBruker($Nombre, $Password);
 
-            var_dump($key);
+           
 
-         if($key ->num_rows == 1 )
+         if($key )
          {
               header("location:Ventas.php");
+
          }
          else 
          {
